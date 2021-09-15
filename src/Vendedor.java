@@ -62,4 +62,10 @@ public class Vendedor {
 		this.nomeVendedor = nome;
 		this.bairro = bairro;
 	}
+	@Override
+	public String toString() {
+		return String.format("Logradouro :  %s  n°  %s - %s / %s", this.rua, this.numeroCasa, this.bairro, this.cidade,
+				this.cidade);
+	}
+
 }

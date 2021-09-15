@@ -30,4 +30,9 @@ public class Produtos {
 		this.cores = cores;
 		this.valorDoProduto = valor;
 	}
+	@Override
+	public String toString() {
+		return String.format("Segue os dados do produto:  Nome : %s  Valor: %s Cor: %s", this.nomeDoProduto, this.valorDoProduto, this.cores);
+	}
+
 }

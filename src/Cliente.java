@@ -62,5 +62,10 @@ public class Cliente {
 		this.nomeCliente = nome;
 		this.cidade = cidade;
 	}
+	@Override
+	public String toString() {
+		return String.format("Informaçôes cliente :  %s  n°  %s - %s / %s", this.rua, this.numeroCasa, this.bairro, this.cidade,
+				this.cidade);
+	}
 
 }

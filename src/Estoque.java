@@ -1,35 +1,34 @@
 
 public class Estoque {
 
-	private  String quantidadeProduto;
-	private  String pesoBruto;
-	private  String presenteNoEstoque;
-	private  String nomeDoProduto;
+	private String quantidadeProduto;
+	private String pesoBruto;
+	private String presenteNoEstoque;
+	private String nomeDoProduto;
 
-	//Getters
-	
+	// Getters
+
 	public String getquantidadeProduto() {
 		return this.quantidadeProduto;
 	}
-	
+
 	public String getpesoBruto() {
 		return this.pesoBruto;
 	}
-	
-	public String getpresenteNoEstoque( ) {
+
+	public String getpresenteNoEstoque() {
 		return this.presenteNoEstoque;
 	}
-	
+
 	public String getnomeDoProduto() {
 		return this.nomeDoProduto;
 	}
-	
-	
-	//Setters
+
+	// Setters
 	public void setquantidadeProduto(String quantidadeProduto) {
 		this.quantidadeProduto = quantidadeProduto;
 	}
-	
+
 	public void setpresenteNoEstoque(String presenteNoEstoque) {
 		this.presenteNoEstoque = presenteNoEstoque;
 	}
@@ -41,9 +40,16 @@ public class Estoque {
 	public void setpesoBruto(String pesoBruto) {
 		this.pesoBruto = pesoBruto;
 	}
-	
-	public Estoque (String nome, String peso) {
+
+	public Estoque(String nome, String peso) {
 		this.nomeDoProduto = nome;
 		this.pesoBruto = peso;
 	}
+
+	@Override
+	public String toString() {
+		return String.format("Fluxo de caixa :  Quantidade: %s  Presente no estoque:  %s Nome do produto: %s",
+				this.quantidadeProduto, this.presenteNoEstoque, this.nomeDoProduto);
+	}
+
 }
